@@ -16,5 +16,4 @@ public class ClienteEmpresa extends Cliente{
         this.nombreFantasia = nombreFantasia;
         this.cuit = cuit;
     }
-
 }

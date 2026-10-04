@@ -26,12 +26,10 @@ public class CuentaAhorro extends Cuenta{
     public void extraer(float monto){
         if(monto>0 && monto<=saldo) this.saldo -= monto;
         else System.out.println("Monto inválido o saldo insuficiente");
-
     }
 
     public void cobrarInteres(){
         if(saldo>0)
-            this.saldo += saldo + interes / 100;//// Se divide por 100 porque el interés representa un porcentaje.
+            this.saldo += saldo * interes / 100;//// Se divide por 100 porque el interés representa un porcentaje.
     }
-
 }

@@ -16,6 +16,5 @@ public class TestSistemaBancario {
         banco.registrarCuenta(null);
 
         System.out.println(banco.getRegistroCuenta());
-
     }
 }

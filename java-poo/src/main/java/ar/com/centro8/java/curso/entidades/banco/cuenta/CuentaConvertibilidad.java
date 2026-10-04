@@ -1,6 +1,7 @@
 package ar.com.centro8.java.curso.entidades.banco.cuenta;
 
-import ar.com.centro8.java.curso.entidades.banco.cliente.Cliente;
+import ar.com.centro8.java.curso.entidades.banco.cliente.ClienteEmpresa;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -11,7 +12,7 @@ import lombok.ToString;
 public class CuentaConvertibilidad extends CuentaCorriente{
     private float saldoDolares;
 
-    public CuentaConvertibilidad(int nroCuenta, Cliente cliente, String moneda, float saldo, float montoDescubierto, float saldoDolares) {
+    public CuentaConvertibilidad(int nroCuenta, ClienteEmpresa cliente, String moneda, float saldo, float montoDescubierto, float saldoDolares) {
         super(nroCuenta, cliente, moneda, saldo, montoDescubierto);
         this.saldoDolares = saldoDolares;
     }
@@ -40,5 +41,4 @@ public class CuentaConvertibilidad extends CuentaCorriente{
         }
         else System.out.println("No se puede realizar la conversión");
     }
-
 }

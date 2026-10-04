@@ -28,8 +28,8 @@ public class CuentaCorriente extends Cuenta{
         else System.out.println("Monto inválido o saldo insuficiente");
     }
 
-    public void depositarCheque(float monto){
-        if(monto>0) this.saldo += monto;
+    public void depositarCheque(Cheque cheque){
+        if(cheque.getMonto()>0) this.saldo += cheque.getMonto();
         else System.out.println("Monto inválido");
     }
-    }
+}
