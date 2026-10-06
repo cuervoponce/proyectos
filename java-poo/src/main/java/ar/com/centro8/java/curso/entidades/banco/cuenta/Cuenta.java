@@ -12,11 +12,11 @@ public abstract class Cuenta {
     private String moneda;
     protected float saldo;//protected para que las clases hijas puedan modicar este atributo
 
-    public Cuenta(int nroCuenta, Cliente cliente, String moneda, float saldo) {
+    public Cuenta(int nroCuenta, Cliente cliente, String moneda) {
         this.nroCuenta = nroCuenta;
         this.cliente = cliente;
         this.moneda = moneda;
-        this.saldo = saldo;
+        this.saldo = 0;
     }
 
     public abstract void depositar(float monto);

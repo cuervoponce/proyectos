@@ -6,7 +6,7 @@ import ar.com.centro8.java.curso.entidades.banco.cuenta.CuentaCorriente;
 import ar.com.centro8.java.curso.entidades.banco.cuenta.Cheque;
 
 public class TestCuentaCorriente {
-   public static CuentaCorriente cuentaRaven= new CuentaCorriente(7, raven, "ARS", 0, -50000);
+   public static CuentaCorriente cuentaRaven= new CuentaCorriente(7, raven, "ARS", -50000);
    
    public static void main(String[] args) {
 

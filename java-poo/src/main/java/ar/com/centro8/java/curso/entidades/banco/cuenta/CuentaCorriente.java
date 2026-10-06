@@ -11,8 +11,8 @@ import lombok.ToString;
 public class CuentaCorriente extends Cuenta{
     private float montoDescubierto;
 
-    public CuentaCorriente(int nroCuenta, Cliente cliente, String moneda, float saldo, float montoDescubierto) {
-        super(nroCuenta, cliente, moneda, saldo);
+    public CuentaCorriente(int nroCuenta, Cliente cliente, String moneda, float montoDescubierto) {
+        super(nroCuenta, cliente, moneda);
         this.montoDescubierto = montoDescubierto;
     }
 

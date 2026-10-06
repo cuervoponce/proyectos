@@ -5,7 +5,7 @@ import static ar.com.centro8.java.curso.tests.TestCliente.emma;
 import ar.com.centro8.java.curso.entidades.banco.cuenta.CuentaAhorro;
 
 public class TestCuentaAhorro {
-    public static CuentaAhorro cuentaEmma = new CuentaAhorro(10, emma, "ARS", 0, 15);
+    public static CuentaAhorro cuentaEmma = new CuentaAhorro(10, emma, "ARS", 15);
 
     public static void main(String[] args) {
         

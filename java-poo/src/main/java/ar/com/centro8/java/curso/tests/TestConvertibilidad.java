@@ -5,7 +5,7 @@ import static ar.com.centro8.java.curso.tests.TestCliente.raven;
 import ar.com.centro8.java.curso.entidades.banco.cuenta.CuentaConvertibilidad;
 
 public class TestConvertibilidad {
-    public static CuentaConvertibilidad cuentaRaven= new CuentaConvertibilidad(8, raven, "ARS", 100000, -50000, 0);
+    public static CuentaConvertibilidad cuentaRaven= new CuentaConvertibilidad(8, raven, "ARS", -50000, 0);
     
     public static void main(String[] args) {
         
