@@ -19,17 +19,20 @@ public class CuentaCorriente extends Cuenta{
     @Override
     public void depositar(float monto) {
         if(monto>0) this.saldo += monto;
+    // Si el monto es mayor a 0, lo suma al saldo actual.
         else System.out.println("Monto inválido");
     }
 
     @Override
     public void extraer(float monto) {
         if(monto>0 && saldo - monto >= montoDescubierto) this.saldo -= monto;
+    // Si el monto es positivo y no supera el límite de descubierto permitido, lo resta del saldo actual.
         else System.out.println("Monto inválido o saldo insuficiente");
     }
 
     public void depositarCheque(Cheque cheque){
         if(cheque.getMonto()>0) this.saldo += cheque.getMonto();
+    // Si el monto del cheque es mayor a 0, lo suma al saldo actual.
         else System.out.println("Monto inválido");
     }
 }
