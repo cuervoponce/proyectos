@@ -2,6 +2,8 @@ package ar.com.centro8.java.curso.tests;
 
 import static ar.com.centro8.java.curso.tests.TestCliente.raven;
 
+import java.time.LocalDate;
+
 import ar.com.centro8.java.curso.entidades.banco.cuenta.CuentaCorriente;
 import ar.com.centro8.java.curso.entidades.banco.cuenta.Cheque;
 
@@ -16,7 +18,7 @@ public class TestCuentaCorriente {
     cuentaRaven.depositar(monto);
 
     //Función de cheque
-    Cheque cheque = new Cheque(5000);
+    Cheque cheque = new Cheque(7000, "Banco1", LocalDate.of(2026, 04, 01));
     cuentaRaven.depositarCheque(cheque);
     System.out.println("Se acreditaron: $" + cuentaRaven.getSaldo());
 
