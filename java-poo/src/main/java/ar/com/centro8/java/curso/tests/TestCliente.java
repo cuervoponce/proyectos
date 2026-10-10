@@ -9,6 +9,7 @@ public class TestCliente {
     public static ClienteEmpresa raven= new ClienteEmpresa(2, "Raven", "01041908");
     
     public static void main(String[] args) {
+
         System.out.println(emma.getNombre());
         System.out.println(raven.getNombreFantasia());
     }
